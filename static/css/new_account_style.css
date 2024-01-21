@@ -1,0 +1,62 @@
+/* new_account_style.css */
+
+/* Reset some basic elements */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply a font throughout the page */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4; /* light grey background */
+    color: #333; /* dark grey text */
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Container for all account information */
+.account-container {
+    width: 80%;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* subtle shadow */
+}
+
+/* Style for headings */
+h1, h2 {
+    color: #0056b3; /* Replace with company primary color */
+}
+
+/* Account details styling */
+.account-details, .enrolled-courses {
+    border-bottom: 1px solid #ccc; /* light line separator */
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+
+/* Enrolled courses list style */
+.enrolled-courses ul {
+    list-style: none; /* removes bullet points */
+    padding: 0;
+}
+
+.enrolled-courses li {
+    background-color: #e6e6e6; /* light list item background for contrast */
+    padding: 10px;
+    margin-bottom: 8px;
+    border-left: 4px solid #0056b3; /* company color for the strip */
+}
+
+.enrolled-courses p {
+    margin-left: 20px;
+    font-style: italic;
+}
+
+/* Responsive design for smaller screens */
+@media screen and (max-width: 768px) {
+    .account-container {
+        width: 95%;
+    }
+}
